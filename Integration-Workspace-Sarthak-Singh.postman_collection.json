@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "00d66d39-8276-4e71-84fe-7b573cd4dfbc",
+		"name": "Integration-Workspace-Sarthak-Singh",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MileStone2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://hu-major-assignment.us-e2.cloudhub.io/users"
+			},
+			"response": []
+		},
+		{
+			"name": "MileStone2 Response",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://milestone1-sarthak-zasf.us-e2.cloudhub.io/milestone1"
+			},
+			"response": []
+		},
+		{
+			"name": "MileStone3Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"post_id\": 2003\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://hu-major-assignment.us-e2.cloudhub.io/userdetails"
+			},
+			"response": []
+		},
+		{
+			"name": "MileStone3Response",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "milestone1-sarthak-zasf.us-e2.cloudhub.io/milestone3"
+			},
+			"response": []
+		},
+		{
+			"name": "MileStone4Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://hu-major-assignment.us-e2.cloudhub.io/userid"
+			},
+			"response": []
+		}
+	]
+}

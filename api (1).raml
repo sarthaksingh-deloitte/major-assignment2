@@ -1,0 +1,87 @@
+#%RAML 1.0
+types:
+  milestone2Response:
+    items:
+      properties:
+        id:
+          example: 2482
+          type: number
+          format: int
+        name:
+          example: Kartik Kocchar
+          type: string
+        email:
+          example: kartik_kocchar@rutherford.io
+          type: string
+        gender:
+          example: female
+          type: string
+        status:
+          example: inactive
+          type: string
+  milestone3RequestBody:
+    properties:
+      post_id:
+        example: "2003"
+        type: string
+  milestone3ResponseBody:
+    properties:
+      Userdetails:
+        items:
+          properties:
+            post_id:
+              example: "2003"
+              type: string
+            id:
+              example: "1978"
+              type: string
+            name:
+              example: Bhaaswar Pothuvaal III
+              type: string
+  milestone4ResponseBody:
+    properties:
+      id:
+        example: 1272
+        type: number
+        format: int
+      name:
+        example: Gorakhanatha Chaturvedi
+        type: string
+      email:
+        example: gorakhanatha_chaturvedi@nitzsche-crist.biz
+        type: string
+      gender:
+        example: female
+        type: string
+      status:
+        example: active
+        type: string
+title: Major-Assignment-Sarthak
+/milestone2:
+  get:
+    body: {}
+    responses:
+      "200":
+        body:
+          application/json:
+            type: milestone2Response
+            items:
+              type: object
+    securedBy: []
+/milestone3:
+  post:
+    body:
+      application/json:
+        type: milestone3RequestBody
+    responses:
+      "200":
+        body:
+          application/json:
+            type: milestone3ResponseBody
+/milestone4:
+  get:
+    responses:
+      "200":
+        body:
+          application/json:
+            type: milestone4ResponseBody
